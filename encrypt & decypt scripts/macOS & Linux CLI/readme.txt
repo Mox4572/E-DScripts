@@ -1,0 +1,6 @@
+You need the package Scrypt and Stat to use these scripts.
+(stat is included on most unix-like systems)
+on macOS you can install with brew by running `brew install scrypt` or with MacPorts by running `sudo port install scrypt`
+on Linux you can install on Debian-based (including Ubuntu and Mint) distros by using a precompiled deb package available at https://www.tarsnap.com/pkg-deb.html; on Redhat-based Linux (including Fedora and CentOS) distros by adding the unofficial "fedora copr" repository at https://copr.fedoraproject.org/coprs/fulltext/?fulltext=tarsnap and running `dnf copr enable DEVELNAME/tarsnap` and `yum install tarsnap`; on Gentoo Linux by running `emerge tarsnap`; on SUSE and openSUSE Linux by following the instructions on https://software.opensuse.org/download.html?project=security&package=tarsnap to install; on Arch Linux with the "community" Arch package repository enabled (https://www.archlinux.org/packages/?sort=&q=tarsnap) with `pacman -S tarsnap`; and on any other distro by following instructions hosted on the https://www.tarsnap.com/download.html page.
+
+You can run `cp ./decrypt.sh /usr/local/bin/decrypt` and `cp ./encrypt.sh /usr/local/bin/encrypt` in this directory to add these scripts as commands you can run. (I.e. `encrypt File01.txt` and `decrypt File01.txt.enc`)

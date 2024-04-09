@@ -1,0 +1,9 @@
+#scripts For Filza File Manager
+#argument $1: file name
+#argument $2: file userid:groupid
+#input: please enter the passphrase
+##################################
+#encrypt any file with scrypt
+export passphrase="$3"
+scrypt dec --passphrase env:passphrase "$1" "${1%.enc}"
+chown -R $2 "${1%.enc}" &> /dev/null
